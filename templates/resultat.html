@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/VH7qsyW/Google-Chrome-icon-February-2022-svg.png">
+	<style>
+		* {
+			border-collapse: separate;
+		}
+
+		.main {
+			position: absolute;
+			top: 130px;
+			right: 15%;
+			width: 600px;
+			background-color: #e6f1e6;
+			border-radius: 15px;
+			align-items: center;
+			height: 72vh;
+			border: 1.5px solid blue;
+
+		}
+
+		.menu-bar .table {
+			margin-left: -150px;
+
+		}
+
+		h1 {
+			font-family: Times New Roman;
+			margin: 20px, 0;
+			color: rgb(18, 17, 17);
+			font-size: 30px;
+			font-weight: lighter;
+			animation-delay: 3.5s;
+			font-style: italic;
+		}
+
+		input[type=submit] {
+			background-color: rgb(127, 216, 131);
+			border: 1px solid black;
+			color: rgb(23, 22, 22);
+			padding: 10px 16px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 10px;
+		}
+
+		input {
+			padding: 20px, 0;
+			margin: 20px, 0;
+		}
+
+		input:hover {
+			color: rgb(127, 216, 131);
+			background-color: rgb(23, 22, 22);
+			;
+		}
+
+		p {
+			color: #ffffff;
+		}
+
+		.row em1 {
+			color: red;
+			font-weight: bolder;
+			font-style: italic;
+		}
+        .row em2 {
+			color: rgb(0, 255, 85);
+			font-weight: bolder;
+			font-style: italic;
+		}
+
+		.main .bold {
+			font-style: italic;
+		}
+
+		.wrapper .predict {
+			font-weight: bold;
+
+		}
+
+		.logo .title {
+			font-size: 20px;
+			margin-left: 30%;
+
+		}
+
+		.gfg {
+			color: green;
+			font-weight: bold;
+		}
+
+		.bold {
+			font-size: 17px;
+			font-weight: bold;
+		}
+        body {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <div class="row">
+
+        {% if result2 == 0 %}
+		
+		<h2> résultat de la prédiction :<em1>désoler vous avez moins de chance pour trouvez du tavaille ; vous devez faire plus de stage; ou modifier votre CV</em1>  </h2>
+		
+        {% else %}
+		<h2> résultat de la prédiction :<em2>félicitation vous avez une forte chance pour touvez du travaille</em2>  </h2>
+	{% endif %}
+        
+        
+        <button onclick="window.history.back()">Précédent</button>
+    </div>
+	
+	
+	
+    
+</body>
+</html>

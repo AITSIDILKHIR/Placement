@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF=8">
+	<title> Prediction page</title>
+	<link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/VH7qsyW/Google-Chrome-icon-February-2022-svg.png">
+	<style>
+		* {
+			border-collapse: separate;
+		}
+
+		.main {
+			position: absolute;
+			top: 130px;
+			right: 15%;
+			width: 600px;
+			background-color: #e6f1e6;
+			border-radius: 15px;
+			align-items: center;
+			height: 72vh;
+			border: 1.5px solid blue;
+
+		}
+
+		.menu-bar .table {
+			margin-left: -150px;
+
+		}
+
+		h1 {
+			font-family: Times New Roman;
+			margin: 20px, 0;
+			color: rgb(18, 17, 17);
+			font-size: 30px;
+			font-weight: lighter;
+			animation-delay: 3.5s;
+			font-style: italic;
+		}
+
+		input[type=submit] {
+			background-color: rgb(127, 216, 131);
+			border: 1px solid black;
+			color: rgb(23, 22, 22);
+			padding: 10px 16px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 10px;
+		}
+
+		input {
+			padding: 20px, 0;
+			margin: 20px, 0;
+		}
+
+		input:hover {
+			color: rgb(127, 216, 131);
+			background-color: rgb(23, 22, 22);
+			;
+		}
+
+		p {
+			color: #ffffff;
+		}
+
+		.row em {
+			color: red;
+			font-weight: bolder;
+			font-style: italic;
+		}
+
+		.main .bold {
+			font-style: italic;
+		}
+
+		.wrapper .predict {
+			font-weight: bold;
+
+		}
+
+		.logo .title {
+			font-size: 20px;
+			margin-left: 30%;
+
+		}
+
+		.gfg {
+			color: green;
+			font-weight: bold;
+		}
+
+		.bold {
+			font-size: 17px;
+			font-weight: bold;
+		}
+	</style>
+     
+    
+</head>
+
+<body>
+   
+	
+		<h1><em>REMARQUE: voir des explications sur les " inputs" au dessous de la page </em></h1>
+           
+		<div align='center' class="main">
+			<h1 class="gfg">Prediction</h1>
+			<h1>Ce n'est qu'une prédiction ; travaillez dur et vous réussirez..????</h1> 
+			<form action="result">
+				<table>
+					<tr>
+						<td align="right"><span class="bold">Age:</span></td>
+						<td align="left"><input type="text" name="n1"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Sexe:</span></td>
+						<td align="left"><input type="text" name="n2"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Specialité:</span></td>
+						<td align="left"><input type="text" name="n3"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Stages:</span></td>
+						<td align="left"><input type="text" name="n4"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">CGPA:</span></td>
+						<td align="left"><input type="text" name="n5"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">Hostal:</span></td>
+						<td align="left"><input type="text" name="n6"></td>
+					</tr>
+					<tr>
+						<td align="right"><span class="bold">nombre de candidature sans reponces:</span></td>
+						<td align="left"><input type="text" name="n7"></td>
+					</tr>
+                    
+
+				</table>
+				<br>
+				<input class="predict" type="submit" value="PREDICT">
+                
+			</form>
+            <div class="wrapper">
+                <span class="title"><strong> NOTE 0 :- </strong> Sexe</span><br>
+                <span class="title"> homme: 0</span><br>
+                <span class="title"> femme: 1</span><br></br>
+                <br>
+                <span class="title"><strong>NOTE 1 :- </strong> Specialité</span><br>
+                <span class="title"> Electrical And Communication: entrer  0</span><br>
+                <span class="title"> Computer Science:entrer 1</span><br>
+                <span class="title"> Information Technology:  entrer 2</span><br>
+                <span class="title"> Mechanical:entrer  3</span><br>
+                <span class="title"> Electrical: entrer 4</span><br>
+                <span class="title"> Civil: 5</span><br> </br> <br>
+                <span class="title"> <strong> NOTE 2 : type d'hébergement pour les étudiants-</strong> </span><br>
+                <span class="title">Hostel Live:  entrer 1</span><br>
+                <span class="title"> ( les étudiants partagent un espace de vie commun,)</span><br>
+                <span class="title">Hostel Not Live: entrer  0 </span><br>
+                <span class="title"> ( les étudiants vivaient seul )</span><br></br>
+                <span class="title"><strong> NOTE 3 :CGPA (Cumulative Grade Point Average)- </strong> </span><br>
+                <span class="title"> CGPA (Cumulative Grade Point Average) est un </span><br>
+                <span class="title"> terme utilisé pour décrire la moyenne </span><br>
+                <span class="title"> cumulative des notes obtenues </span><br>
+                <span class="title"> par un étudiant tout au long de ses études. ( entrer une valeur entre 5 et 10 )</span><br></br>
+                
+
+			</div>
+
+
+		</div>
+
+			
+		</div>
+</body>
+
+</html>
